@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.12)
+project(zlib_test)
+find_library(ZLIB_LIBRARY z)
+set(CMAKE_CXX_STANDARD 11)
+add_executable(zlib_test src/prog1.cpp)
+target_link_libraries(zlib_test ${ZLIB_LIBRARY})
